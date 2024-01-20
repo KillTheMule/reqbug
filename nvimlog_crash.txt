@@ -1,0 +1,230 @@
+
+DBG 2024-01-20T17:04:53.364 ?.49834    process_spawn:126: new: pid=49836 exepath=[/home/pips/Devel/neovim/reqbug/neovim/build/bin/nvim]
+DBG 2024-01-20T17:04:53.364 ?.49834    rpc_start:141: rpc ch 3 in-stream=0x565449e6c6e0 out-stream=0x565449e6c880
+INF 2024-01-20T17:04:53.364 ?.49834    set_init_2:601: startup runtimepath/packpath value: /etc/xdg/nvim,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/local/share/nvim,/home/pips/Devel/neovim/reqbug/neovim/build/lib/nvim,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/etc/xdg/nvim/after
+DBG 2024-01-20T17:04:53.364 ?.49834    tui_get_stty_erase:2393: stty/termios:erase=
+DBG 2024-01-20T17:04:53.364 ?.49834    tui_tk_ti_getstr:2410: libtermkey:kbs=
+DBG 2024-01-20T17:04:53.364 ?.49834    tui_tk_ti_getstr:2415: libtermkey:kdch1=[3~
+DBG 2024-01-20T17:04:53.365 ?.49834    tui_tk_ti_getstr:2421: libtermkey:kmous=[<
+DBG 2024-01-20T17:04:53.365 ?.49834    log_server_msg:70: RPC ->ch 3: [notify]   [2, "nvim_ui_attach", [212, 65, {"rgb"=>false, "ext_linegrid"=>true, "ext_termcolors"=>true, "term_name"=>"xterm-256color", "term_colors"=>256, "stdin_tty"=>true, "stdout_tty"=>true}]]
+DBG 2024-01-20T17:04:53.366 ?.49836    rpc_start:141: rpc ch 1 in-stream=0x55b697c876c0 out-stream=0x55b697c87520
+INF 2024-01-20T17:04:53.366 nvim.49836.0 set_init_2:601: startup runtimepath/packpath value: /etc/xdg/nvim,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/local/share/nvim,/home/pips/Devel/neovim/reqbug/neovim/build/lib/nvim,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/etc/xdg/nvim/after
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 receive_msgpack:299: ch 1: parsing 120 bytes from msgpack Stream: 0x55b697c87520
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 log_client_msg:100: RPC <-ch 1: [response] : nvim_ui_attach
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 handle_request:422: RPC: scheduled nvim_ui_attach
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 handle_nvim_ui_attach:5840: RPC: ch 1: invoke nvim_ui_attach
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 UI: option_set
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 UI: option_set (+15 times...)
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 UI: set_icon
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 UI: set_title
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 UI: chdir
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 UI: option_set
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 UI: option_set (+4 times...)
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 UI: grid_resize
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 UI: grid_clear
+DBG 2024-01-20T17:04:53.366 nvim.49836.0 UI: update_menu
+DBG 2024-01-20T17:04:53.366 ?.49834    log_server_msg:70: RPC ->ch 3: [notify]   [2, "nvim_ui_term_event", ["termresponse", "]11;rgb:fdfd/f6f6/e3e3"]]
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: update_menu (+10 times...)
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: chdir
+INF 2024-01-20T17:04:53.367 nvim.49836.0 emsg_multiline:714: E484: Can't open file /usr/local/share/nvim/syntax/syntax.vim
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: chdir (+1 times...)
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: default_colors_set
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 receive_msgpack:299: ch 1: parsing 59 bytes from msgpack Stream: 0x55b697c87520
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 log_client_msg:100: RPC <-ch 1: [response] : nvim_ui_term_event
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 handle_request:422: RPC: scheduled nvim_ui_term_event
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 process_spawn:126: new: pid=49839 exepath=[/bin/bash]
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 rpc_start:141: rpc ch 3 in-stream=0x55b697d05d30 out-stream=0x55b697d05ed0
+INF 2024-01-20T17:04:53.367 nvim.49836.0 channel_create_event:248: new channel 3 (command line:0) : {"id": 3, "client": {}, "argv": ["/bin/bash", "-c", "target/debug/reqbug"], "mode": "rpc", "stream": "job"}
+INF 2024-01-20T17:04:53.367 nvim.49836.0 main:648: starting main loop
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: raw_line (+1 times...)
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: hl_group_set
+DBG 2024-01-20T17:04:53.367 ?.49834    receive_msgpack:299: ch 3: parsing 3844 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: hl_group_set (+61 times...)
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.367 ?.49834    log_server_msg:70: RPC ->ch 3: [notify]   [2, "nvim_ui_set_option", ["rgb", false]]
+DBG 2024-01-20T17:04:53.367 ?.49834    receive_msgpack:299: ch 3: parsing 2990 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 receive_msgpack:299: ch 1: parsing 27 bytes from msgpack Stream: 0x55b697c87520
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 log_client_msg:100: RPC <-ch 1: [response] : nvim_ui_set_option
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 handle_request:422: RPC: scheduled nvim_ui_set_option
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: raw_line (+73 times...)
+DBG 2024-01-20T17:04:53.367 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: grid_cursor_goto
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: mode_info_set
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: mode_change
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: mouse_on
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 handle_nvim_ui_term_event:6235: RPC: ch 1: invoke nvim_ui_term_event
+DBG 2024-01-20T17:04:53.368 ?.49834    receive_msgpack:299: ch 3: parsing 1903 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: default_colors_set
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: hl_attr_define
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 handle_nvim_ui_set_option:6047: RPC: ch 1: invoke nvim_ui_set_option
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: hl_attr_define (+40 times...)
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: hl_group_set
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: hl_group_set (+55 times...)
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: raw_line (+62 times...)
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.368 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.368 ?.49834    receive_msgpack:299: ch 3: parsing 3700 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 receive_msgpack:299: ch 3: parsing 26 bytes from msgpack Stream: 0x55b697d05ed0
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 log_client_msg:100: RPC <-ch 3: [request]  : nvim_buf_set_name
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 handle_request:422: RPC: scheduled nvim_buf_set_name
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 handle_nvim_buf_set_name:2754: RPC: ch 3: invoke nvim_buf_set_name
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 log_server_msg:70: RPC ->ch 3: [response] [1, 0, nil, nil]
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.370 ?.49834    receive_msgpack:299: ch 3: parsing 90 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 receive_msgpack:299: ch 3: parsing 26 bytes from msgpack Stream: 0x55b697d05ed0
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 log_client_msg:100: RPC <-ch 3: [request]  : nvim_buf_set_name
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 handle_request:422: RPC: scheduled nvim_buf_set_name
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 handle_nvim_buf_set_name:2754: RPC: ch 3: invoke nvim_buf_set_name
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: chdir
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 log_server_msg:70: RPC ->ch 3: [response] [1, 1, nil, nil]
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: chdir (+2 times...)
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.370 ?.49834    receive_msgpack:299: ch 3: parsing 183 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 receive_msgpack:299: ch 3: parsing 26 bytes from msgpack Stream: 0x55b697d05ed0
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 log_client_msg:100: RPC <-ch 3: [request]  : nvim_buf_set_name
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 handle_request:422: RPC: scheduled nvim_buf_set_name
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 handle_nvim_buf_set_name:2754: RPC: ch 3: invoke nvim_buf_set_name
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: chdir
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 log_server_msg:70: RPC ->ch 3: [response] [1, 2, nil, nil]
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: chdir (+2 times...)
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.370 ?.49834    receive_msgpack:299: ch 3: parsing 183 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 receive_msgpack:299: ch 3: parsing 26 bytes from msgpack Stream: 0x55b697d05ed0
+DBG 2024-01-20T17:04:53.370 nvim.49836.0 log_client_msg:100: RPC <-ch 3: [request]  : nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_request:422: RPC: scheduled nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_nvim_buf_set_name:2754: RPC: ch 3: invoke nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_server_msg:70: RPC ->ch 3: [response] [1, 3, nil, nil]
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir (+2 times...)
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.371 ?.49834    receive_msgpack:299: ch 3: parsing 183 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 receive_msgpack:299: ch 3: parsing 26 bytes from msgpack Stream: 0x55b697d05ed0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_client_msg:100: RPC <-ch 3: [request]  : nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_request:422: RPC: scheduled nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_nvim_buf_set_name:2754: RPC: ch 3: invoke nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_server_msg:70: RPC ->ch 3: [response] [1, 4, nil, nil]
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir (+2 times...)
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.371 ?.49834    receive_msgpack:299: ch 3: parsing 183 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 receive_msgpack:299: ch 3: parsing 26 bytes from msgpack Stream: 0x55b697d05ed0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_client_msg:100: RPC <-ch 3: [request]  : nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_request:422: RPC: scheduled nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_nvim_buf_set_name:2754: RPC: ch 3: invoke nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_server_msg:70: RPC ->ch 3: [response] [1, 5, nil, nil]
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir (+2 times...)
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.371 ?.49834    receive_msgpack:299: ch 3: parsing 183 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 receive_msgpack:299: ch 3: parsing 26 bytes from msgpack Stream: 0x55b697d05ed0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_client_msg:100: RPC <-ch 3: [request]  : nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_request:422: RPC: scheduled nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_nvim_buf_set_name:2754: RPC: ch 3: invoke nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_server_msg:70: RPC ->ch 3: [response] [1, 6, nil, nil]
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir (+2 times...)
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.371 ?.49834    receive_msgpack:299: ch 3: parsing 183 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 receive_msgpack:299: ch 3: parsing 26 bytes from msgpack Stream: 0x55b697d05ed0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_client_msg:100: RPC <-ch 3: [request]  : nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_request:422: RPC: scheduled nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_nvim_buf_set_name:2754: RPC: ch 3: invoke nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_server_msg:70: RPC ->ch 3: [response] [1, 7, nil, nil]
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir (+2 times...)
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.371 ?.49834    receive_msgpack:299: ch 3: parsing 183 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 receive_msgpack:299: ch 3: parsing 26 bytes from msgpack Stream: 0x55b697d05ed0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_client_msg:100: RPC <-ch 3: [request]  : nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_request:422: RPC: scheduled nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_nvim_buf_set_name:2754: RPC: ch 3: invoke nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_server_msg:70: RPC ->ch 3: [response] [1, 8, nil, nil]
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir (+2 times...)
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.371 ?.49834    receive_msgpack:299: ch 3: parsing 183 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 receive_msgpack:299: ch 3: parsing 26 bytes from msgpack Stream: 0x55b697d05ed0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_client_msg:100: RPC <-ch 3: [request]  : nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_request:422: RPC: scheduled nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 state_enter:98: input: K_EVENT
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 handle_nvim_buf_set_name:2754: RPC: ch 3: invoke nvim_buf_set_name
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 log_server_msg:70: RPC ->ch 3: [response] [1, 9, nil, nil]
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 may_trigger_safestate:301: SafeState: Start triggering
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: chdir (+5 times...)
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: raw_line
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=0 events_pending=0
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: win_viewport
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 UI: flush
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 inbuf_poll:465: blocking... events_enabled=1 events_pending=0
+DBG 2024-01-20T17:04:53.371 ?.49834    receive_msgpack:299: ch 3: parsing 280 bytes from msgpack Stream: 0x565449e6c880
+DBG 2024-01-20T17:04:53.371 nvim.49836.0 receive_msgpack:299: ch 3: parsing 3 bytes from msgpack Stream: 0x55b697d05ed0
+INF 2024-01-20T17:04:53.434 ?.49834    on_process_exit:431: exited: pid=49836 status=134 stoptime=0
+DBG 2024-01-20T17:04:53.434 ?.49834    stream_close:106: closing Stream: 0x565449ea6648
+DBG 2024-01-20T17:04:53.434 ?.49834    stream_close:106: closing Stream: 0x565449e6c6e0
+DBG 2024-01-20T17:04:53.434 ?.49834    stream_close:106: closing Stream: 0x565449e6c880
+INF 2024-01-20T17:04:53.434 ?.49834    chan_close_with_error:644: RPC: ch 3 was closed by the client
+INF 2024-01-20T17:04:53.434 ?.49834    os_exit:682: Nvim exit: 134
