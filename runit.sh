@@ -1,4 +1,4 @@
-cargo b || exit 1
+cargo b|| exit 1
 echo > ab.txt
 echo > nvimlog.txt
 NVIM_LOG_FILE=nvimlog.txt neovim/build/bin/nvim --clean -c ":call jobstart('target/debug/reqbug',{'rpc':1})"

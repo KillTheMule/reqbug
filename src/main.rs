@@ -30,7 +30,8 @@ async fn main() {
 
   //nvim.feedkeys("iab\ncd", "", true).await.unwrap();
 
-  let buf = Buffer { code_data: Value::from(1), neovim: nvim.clone() };
+  //let buf = Buffer { code_data: Value::from(1), neovim: nvim.clone() };
+  let buf = nvim.get_current_buf().await.unwrap();
 
 //  let arr = vec!["\n";1048577];
  // let s: String = arr.iter().copied().collect();

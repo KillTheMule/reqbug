@@ -290,14 +290,16 @@ dependencies = [
 
 [[package]]
 name = "nvim-rs"
-version = "0.6.0-pre"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9156b04d79079937abae1eb912669c48c360fb5d86138052a9bbae9c5220a71e"
 dependencies = [
  "async-trait",
  "futures 0.3.30",
  "log",
  "parity-tokio-ipc",
  "rmp",
- "rmpv 1.0.1",
+ "rmpv",
  "tokio",
  "tokio-util",
 ]
@@ -446,7 +448,7 @@ version = "0.1.0"
 dependencies = [
  "async-trait",
  "nvim-rs",
- "rmpv 0.4.7",
+ "rmpv",
  "tokio",
 ]
 
@@ -459,16 +461,6 @@ dependencies = [
  "byteorder",
  "num-traits",
  "paste",
-]
-
-[[package]]
-name = "rmpv"
-version = "0.4.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7c760afe11955e16121e36485b6b828326c3f0eaff1c31758d96dbeb5cf09fd5"
-dependencies = [
- "num-traits",
- "rmp",
 ]
 
 [[package]]
