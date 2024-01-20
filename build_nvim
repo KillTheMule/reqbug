@@ -1,0 +1,4 @@
+cd neovim
+rm -rf build
+make CMAKE_EXTRA_FLAGS="-DCMAKE_BUILD_TYPE=Debug" -j 5
+cd ..
