@@ -1,7 +1,8 @@
 cargo b|| exit 1
 #echo > ab.txt
 echo > nvimlog.txt
-NVIM_LOG_FILE=nvimlog.txt neovim/build/bin/nvim --clean -c ":call jobstart('prog.sh',{'rpc':1})"
+echo > pipe.txt
+NVIM_LOG_FILE=nvimlog.txt neovim/build/bin/nvim --clean -c ":call jobstart(['target/debug/eave'],{'rpc':1})"
 #Dec  Char                           Dec  Char     Dec  Char     Dec  Char
 #---------                           ---------     ---------     ----------
 #  0  NUL (null)                      32  SPACE     64  @         96  `
