@@ -32,15 +32,16 @@ async fn main() {
   //let buf = Buffer { code_data: Value::from(1), neovim: nvim.clone() };
   let buf = nvim.get_current_buf().await.unwrap();
 
-//  let arr = vec!["\n";1048577];
- // let s: String = arr.iter().copied().collect();
+ let arr = vec!["i";1048577];
+ let arr = vec!["ia\n<Esc>";2];
+ let s: String = arr.iter().copied().collect();
 
   for _i in 0..20 { 
-      //nvim.feedkeys(&s, "", true).await.unwrap();
-      //buf.set_lines(-2, -1, false, vec![s]).await.unwrap();
-      buf.set_lines(-2, -1, false, vec!["a".to_string()]).await.unwrap();
-      //buf.set_name(&format!("a{i}")).await.unwrap();
-      //std::thread::sleep(std::time::Duration::from_secs(2));
+      nvim.feedkeys(&s, "", true).await.unwrap();
+      //buf.set_lines(-2, -1, false, vec![s.clone()]).await.unwrap();
+      //buf.set_lines(-2, -1, false, vec!["a".to_string()]).await.unwrap();
+      //buf.set_name(&format!("aaaaaaaaaa{i}")).await.unwrap();
+      std::thread::sleep(std::time::Duration::from_secs(1));
   }
 
   match io_handler.await {
