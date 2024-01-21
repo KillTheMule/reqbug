@@ -3,7 +3,6 @@ use tokio::io::Stdout;
 
 use nvim_rs::{
   compat::tokio::Compat, create::tokio as create, Handler, Neovim, Value,
-  exttypes::Buffer
 };
 
 #[derive(Clone)]
@@ -36,11 +35,11 @@ async fn main() {
 //  let arr = vec!["\n";1048577];
  // let s: String = arr.iter().copied().collect();
 
-  for i in 0..20 { 
+  for _i in 0..20 { 
       //nvim.feedkeys(&s, "", true).await.unwrap();
       //buf.set_lines(-2, -1, false, vec![s]).await.unwrap();
-      //buf.set_lines(-2, -1, false, vec!["a".to_string()]).await.unwrap();
-      buf.set_name(&format!("a{i}")).await.unwrap();
+      buf.set_lines(-2, -1, false, vec!["a".to_string()]).await.unwrap();
+      //buf.set_name(&format!("a{i}")).await.unwrap();
       //std::thread::sleep(std::time::Duration::from_secs(2));
   }
 

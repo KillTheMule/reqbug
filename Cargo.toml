@@ -10,3 +10,11 @@ nvim-rs =  { version = "*", features = ["use_tokio"] }
 async-trait = "*"
 rmpv = "*"
 tokio = "*"
+
+[[bin]]
+name = "reqbug"
+path = "src/bin/reqbug.rs"
+
+[[bin]]
+name = "eave"
+path = "src/bin/eave.rs"
