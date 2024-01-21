@@ -1,4 +1,4 @@
 cd neovim
 rm -rf build
-make CMAKE_EXTRA_FLAGS="-DCMAKE_BUILD_TYPE=Debug" -j 5
+make CMAKE_EXTRA_FLAGS="-DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/pips/local/stow/neovim" -j 5
 cd ..
